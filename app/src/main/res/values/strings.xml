@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spaceship The Game</string>
+    <string name="developer">Разработчик Малахов М.А. ИС12–20</string>
+    <string name="newgame">Новая игра</string>
+    <string name="chooseship">Корабль</string>
+    <string name="exit">Выход</string>
+    <string name="descriptionForShips">Корабль</string>
+
+    <string name="shipPreference">SpaceGameShips</string>
+    <string name="chosedShip">chosedShip</string>
+</resources>
