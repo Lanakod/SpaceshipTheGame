@@ -15,6 +15,11 @@ class SplashActivity : AppCompatActivity() {
         val image = findViewById<ImageView>(R.id.imageView)
 
         val sharedPreference =  getSharedPreferences(getString(R.string.shipPreference), Context.MODE_PRIVATE)
+        if (sharedPreference.getInt(getString(R.string.chosedShip), 0) == 0) {
+            val editor = sharedPreference.edit()
+            editor.putInt(getString(R.string.chosedShip), R.drawable.spaceship_orange)
+            editor.apply()
+        }
         image.setImageResource(sharedPreference.getInt(getString(R.string.chosedShip), 0))
         image.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fadein))
 

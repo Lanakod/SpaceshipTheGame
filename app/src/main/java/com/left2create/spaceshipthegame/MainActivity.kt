@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val sharedPreference =  getSharedPreferences(getString(R.string.shipPreference), Context.MODE_PRIVATE)
-        if(sharedPreference.getInt(getString(R.string.chosedShip), 0) == 0)
-        {
+        val sharedPreference =
+            getSharedPreferences(getString(R.string.shipPreference), Context.MODE_PRIVATE)
+        if (sharedPreference.getInt(getString(R.string.chosedShip), 0) == 0) {
             val editor = sharedPreference.edit()
             editor.putInt(getString(R.string.chosedShip), R.drawable.spaceship_orange)
             editor.apply()
